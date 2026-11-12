@@ -40,3 +40,6 @@ _Update when the task or branch focus changes._
 
 - 2026-11-12 JAY 定案：12 月階段目標 21 萬（內用＋外帶＋Uber 合計）；長期目標月 30 萬
 - 2026-11-12 JAY 確認：12 月店休 12/7、8、14、15、21、22、28、29（可能再休 2 天出國，未定）；冬至 12/22 店休不送小點；揪團 4 碗以上送冷香芽（單點 50）；價格以成本 Excel 為準；12/25 照常營業；豌豆粉已下架
+- 2026-11-12 工具與流程：6 個 agent（marketing-writer、review-replier、market-analyst、finance-analyst、menu-pricing、uber-ops）與 4 個 skill（weekly-report、backend-read、review-reply-post、monthly-close）已上線並推上 GitHub，目前只用假資料測過，Safari 實際操作待第一次跑週報／月結驗證
+- 2026-11-12 JAY 決定：`git push origin main` 可由 Claude 執行，但一定要 JAY 確認 commit 內容後才推（`.claude/settings.json` 只允許這一條）。財務 Excel、PDF、圖檔不進版控
+- 2026-11-12 工作方式：一個主題一個對話（營運計劃、週報、月結、行銷／評論各自開新對話），做完更新 progress.md／activeContext.md 再收尾；重活交給 agent 以省 token
