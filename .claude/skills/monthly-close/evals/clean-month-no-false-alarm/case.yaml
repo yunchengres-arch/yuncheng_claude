@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: clean-month-no-false-alarm
+expected_outcome: |
+  這次營運表沒有錯：月初庫存 13,599 等於上月月底庫存、瓦斯只算一次 3,540、營業額與 POS＋Uber 相符。
+  報告不能編造錯誤。損益三個版本：65,123／12,482／-23,518（貸款不在表內是已知事項，可以提到）。
+  上月與品項銷售資料沒有提供，要留白並說明，不能編造。
+context:
+  scaffold_script: place-files.sh

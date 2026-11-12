@@ -1,0 +1,13 @@
+{
+  "_note": "測試資料",
+  "begindate": "2026-10-01",
+  "enddate": "2026-10-05",
+  "total": 50510,
+  "rows": [
+    {"date": "2026-10-01", "dineIn": 7000,  "takeout": 500},
+    {"date": "2026-10-02", "dineIn": 8000,  "takeout": 600},
+    {"date": "2026-10-03", "dineIn": 9000,  "takeout": 700},
+    {"date": "2026-10-04", "dineIn": 12000, "takeout": 900},
+    {"date": "2026-10-05", "dineIn": 11000, "takeout": 800}
+  ]
+}
