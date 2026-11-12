@@ -42,3 +42,6 @@
 - 後台登入狀態常在幾分鐘內失效，原因未確認；批次查詢要在登入後立即執行
 
 _Keep bullets factual and small; link issues or PRs when useful._
+
+- 2026-11-12：經營指示寫入 CLAUDE.md（另有 claude.ai 版 `雲承_claude.ai_Project指示.md`）；目標月營業額 30 萬。雲端排程：每週一 09:00 行銷文案（trig_011cYt57VoJAdtZxjqRqNxp2）、每月 25 日 09:00 行銷計劃（trig_01XE3JYsd5HxveRSQ4MCsBvB），產出到 `行銷文案/`。週報／月結於本機執行，存 `雲承營業分析/`
+- 2026-11-12：`行銷文案/行銷計劃_2026-12.md` 完成（主軸熱湯＋冬至、階段目標 21 萬、LINE 揪團外帶、Uber 雙人套餐）；4 項待 JAY 確認。菜單與品牌故事整理進 productContext.md
