@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: normal-week-full-data
+expected_outcome: |
+  產出一份完整週報：本週總營業額 74,000（內用 61,600、外帶 6,000、Uber 6,400），
+  占比約 83% / 8% / 9%，較上週 68,000 成長約 8.8%；每週目標約 81,818（30 萬 × 6 ÷ 22），
+  達成約 90%；3 星評論附回覆草稿且標明尚未送出；下週行動不超過 3 項且標為建議。
+context:
+  scaffold_script: place-files.sh

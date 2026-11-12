@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: short-week-per-day-compare
+expected_outcome: |
+  本週只營業 5 天（12/9～12/13），總營業額 46,700，上週 6 天 57,000。總額看似掉 18%，但每營業日
+  9,340 對 9,500，只差約 1.7%；報告要用每營業日比較並說明「生意沒變差，只是少開」。每週目標約 45,652
+  （21 萬 × 5 ÷ 23），達成約 102%。
+context:
+  scaffold_script: place-files.sh

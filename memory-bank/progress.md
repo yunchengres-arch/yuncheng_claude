@@ -47,3 +47,4 @@ _Keep bullets factual and small; link issues or PRs when useful._
 - 2026-11-12：`行銷文案/行銷計劃_2026-12.md` 完成（主軸熱湯＋冬至、階段目標 21 萬、LINE 揪團外帶、Uber 雙人套餐）；4 項待 JAY 確認。菜單與品牌故事整理進 productContext.md
 - 2026-11-12：Google 評論第一批 41 則回覆已由 Safari 送出並驗證（草稿 `行銷文案/Google評論回覆草稿_2026-11-12.md`）；Melody Huang 1★（2025/9 訂位糾紛）JAY 決定不回。剩約 57 則未回覆（多為 2025 年的 4～5★），待第二批。回覆流程：商家面板 iframe `local/business/.../customers/reviews` 開新分頁 → 未回覆 → 逐則填 textarea「你的公開回覆」送出，送出後需重新整理確認
 - 2026-11-12：Google 評論第二批（2026 年的 18 則）已送出並驗證。JAY 決定只回今年的評論；剩 39 則未回覆皆為 2025 年（46 週前以上）及 Melody 1★，不處理。之後新評論每週檢查時寫草稿
+- 2026-11-12：建立 skill `weekly-report`（`.claude/skills/weekly-report/`，含 3 個測試案例）。假資料測試通過率 18/18，無 skill 為 11/18。尚未測 Safari 讀後台，第一次實際跑週報時驗證。CLAUDE.md 的「跑週報」段落已改為指向此 skill。月結與評論回覆之後也可做成 skill

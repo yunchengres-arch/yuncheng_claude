@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: missing-uber-data
+expected_outcome: |
+  只有 POS 資料：內用 61,600、外帶 6,000，合計 67,600。報告必須明說 Uber 數字缺漏，總營業額是下限，
+  不能把 Uber 當成 0 來算外送占比，也不能拿上週的 Uber 數字補上。目標達成率要標明是下限
+  （67,600 ÷ 81,818 約 83% 以上）。
+context:
+  scaffold_script: place-files.sh
