@@ -37,3 +37,5 @@
 - 損益平衡試算表已下載到本機（2026-11-11）：`~/Downloads/雲承_損益平衡試算表.xlsx`，尚未修改；此機器沒有 openpyxl，目前用 Python 內建 zipfile／XML 讀取
 
 _Update when the task or branch focus changes._
+
+- 2026-11-12 JAY 定案：12 月階段目標 21 萬（內用＋外帶＋Uber 合計）；長期目標月 30 萬
