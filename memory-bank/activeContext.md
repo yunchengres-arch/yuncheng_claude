@@ -43,3 +43,6 @@ _Update when the task or branch focus changes._
 - 2026-11-12 工具與流程：6 個 agent（marketing-writer、review-replier、market-analyst、finance-analyst、menu-pricing、uber-ops）與 4 個 skill（weekly-report、backend-read、review-reply-post、monthly-close）已上線並推上 GitHub，目前只用假資料測過，Safari 實際操作待第一次跑週報／月結驗證
 - 2026-11-12 JAY 決定：`git push origin main` 可由 Claude 執行，但一定要 JAY 確認 commit 內容後才推（`.claude/settings.json` 只允許這一條）。財務 Excel、PDF、圖檔不進版控
 - 2026-11-12 工作方式：一個主題一個對話（營運計劃、週報、月結、行銷／評論各自開新對話），做完更新 progress.md／activeContext.md 再收尾；重活交給 agent 以省 token
+- 2026-11-12 JAY 回覆 Q1 計劃問題：Q1 階段目標接受「平均」；春節休除夕～初五（月休 8 天不含春節連假）；尖峰餐期最多出過約 50 碗，兩人作業約 30 碗沒問題；兼職時間不固定（有他工作）；Q1 外送守在約 2.7～3 萬、不當主戰場可以；行銷預算上限約 1 萬（週期待確認，我先假設每月）；部落客可嘗試，需找質感好的。
+- 2026-11-12 Q1 計劃草稿 v1：`雲承營業分析/Q1計劃_2027_草稿v1.md`。我的判斷：Q1 每月平均 27 萬做不到（2 月只剩約 14 營業日），建議改日均指標與 1 月 24／2 月 17／3 月 30 萬，待 JAY 決定
+- 2026-11-15 JAY 確認：11 月店休 11/2、3、9、10、16、17、23、30（共 8 天，月營業日 22 天）；11/16–11/22 週一二休、營業 5 天
