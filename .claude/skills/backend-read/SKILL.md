@@ -39,11 +39,17 @@ end run
 ## 四、各來源
 
 **點餐後台**（`fcdmc.com.tw:8989`）
+- **日期一定要帶時間**：`begindate=2026-11-09 00:00`、`enddate=2026-11-15 23:59`。只寫日期時，後台不會報錯，但回的是**全期間累計**（曾看到 545 萬、8,023 筆），很容易誤當成這週的數字。單次查詢最多 7 天（高峰期），逐日查再加總最穩。
+- 查詢方式：先 GET `/orderCalculate.do` 用 DOMParser 取出表單的預設欄位（`sortType`、`orderactual`、`payCalculate` 等），只改日期後 POST，比自己湊欄位可靠。結果頁文字裡 `現金：$X [N筆]` 是全部付款方式的合計，`内用：`、`外帶：` 是分項。
+- 固定腳本在 `.claude/skills/backend-read/scripts/`：`safari-js.scpt <JS檔> <網址關鍵字>`（在網址含關鍵字的分頁執行 JS，只讀）、`safari-open.scpt <網址>`（開新分頁）。`.claude/settings.json` 已允許這兩支，執行不用再確認。
 - `POST /orderCalculate.do`，日期欄位 `begindate`、`enddate`。品項統計用 `tasteCalculate=0`；要看 0 元作法用 `tasteCalculate=2`。
 - 取餐方式用 `typeSearch`。總額查詢（`typeSearch=1`、`tasteCalculate=0`）曾核對過十月是 187,215，是**全部取餐方式的合計**（內用 175,240、外帶 11,975）。`typeSearch` 各值對應哪種取餐方式還沒完全確認，所以先查總額，再分別查內用與外帶，三者要加得起來。
 - 品項合併規則：奶茶、高山青茶、涼拌米線改名視為同品項；「作法：A+B」維持獨立；同名重複列併入主餐。**套餐＝加價作法**，0 元作法是客人的調整，不算套餐。
 
 **Uber Eats 商家後台**
+- 網址（店家代碼見後台網址）：訂單 `/manager/orders?restaurantUUID=…&dateRange=last_30_days`、成效 `/manager/home/<代碼>/analytics/sales-v2`、評價 `/manager/home/<代碼>/feedback/reviews`、廣告 `/manager/marketing/campaigns`。
+- 訂單明細是**無限捲動**，一次只載入 20 筆：把 `main` 內層區塊捲到底、等 4 秒，重複到「找到 N 項結果」的 N 等於已讀筆數。「過去 30 天」不含今天，今天的單要用 `dateRange=today` 另查（曾因此差 4 筆、2,155 元，與成效頁對起來才發現）。
+- 明細偶爾有金額欄是空的（可能是取消單），要列出來，不要當 0 也不要略過。
 - 要讀：銷售額、訂單數、抽成（目前 15%，自取 0%）、商店瀏覽數、瀏覽到下單的比例、廣告花費與廣告帶來的營業額。
 - 訂單明細常分頁或只載入一部分。**同時記下「明細筆數」和「後台摘要筆數」**，兩者不同就是資料缺口，要寫出來（曾發生摘要 133 筆但只讀到 130 筆）。
 - 明細裡有客人的姓名、地址這類個資，**不要寫進專案檔案**，只保留彙總。

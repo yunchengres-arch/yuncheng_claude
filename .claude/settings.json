@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git push origin main)"
+      "Bash(git push origin main)",
+      "Bash(osascript .claude/skills/backend-read/scripts/safari-js.scpt *)",
+      "Bash(osascript /Users/edc1485/Desktop/雲承2026/雲承營業claude/.claude/skills/backend-read/scripts/safari-js.scpt *)",
+      "Bash(osascript .claude/skills/backend-read/scripts/safari-open.scpt *)",
+      "Bash(osascript /Users/edc1485/Desktop/雲承2026/雲承營業claude/.claude/skills/backend-read/scripts/safari-open.scpt *)"
     ]
   }
 }
